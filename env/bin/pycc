@@ -1,0 +1,3 @@
+#!/Users/FrankWang/Desktop/Fall19/fairness-and-missing-values/env/bin/python3
+from numba.pycc import main
+main()

@@ -1,0 +1,4 @@
+[console_scripts]
+BlackBoxAuditing-repair = BlackBoxAuditing.repair:main
+BlackBoxAuditing-test = BlackBoxAuditing.test:test
+
