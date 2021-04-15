@@ -4,22 +4,17 @@ The framework of our code uses code from another Github project at https://githu
 
 This repository contains the following files: <br>
 <UL>
-<LI>MAR_compas.py: accuracy and fairness measure before and after reweighting with MAR missing values using COMPAS data <br>
-<LI>MAR_adult.py: accuracy and fairness measure before and after reweighting with MAR missing values using Adult data <br>
-<LI>MNAR_compas.py: accuracy and fairness measure before and after reweighting with MNAR missing values using COMPAS data <br>
-<LI>MNAR_adult.py: accuracy and fairness measure before and after reweighting with MNAR missing values using Adult data <br>
-<LI>selection_compas_before_fix.py: accuracy and fairness measure before resampling with selection bias using COMPAS data <br>
-<LI>selection_compas_after_fix.py: accuracy and fairness measure after resampling with selection bias using COMPAS data <br>
-<LI>selection_adult_before_fix.py: accuracy and fairness measure before resampling with selection bias using Adult data <br>
-<LI>selection_adult_after_fix.py: accuracy and fairness measure after resampling with selection bias using Adult data <br>
-<LI>comb_compas_before_fix.py: accuracy and fairness measure before using fixing algorithms with both selection bias and missing values using COMPAS data <br>
-<LI>comb_compas_stratified_resample.py: accuracy and fairness measure after using stratified resampling and reweighting with both selection bias and missing values (MAR) using COMPAS data <br>
-<LI>comb_compas_unif_resample.py: accuracy and fairness measure after using uniform resampling and reweighting with both selection bias and missing values (MNAR) using COMPAS data <br>
+<LI>demo_missing_adult.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using Adult data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm <br>
+<LI>demo_missing_compas.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using COMPAS data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm <br>
+<LI>demo_sel_adult.ipynb: this file provides a step by step instruction to create selection bias using Adult data to show the negative effects of selection and show the performance of our resampling algorithm <br>
+<LI>demo_sel_compas.ipynb: this file provides a step by step instruction to create selection bias using COMPAS data to show the negative effects of selection and show the performance of our resampling algorithm <br>
+
 </UL>
 
 # Usage
 This code relies on a short list of python packages, and comes with a virtual environment with the packages pre-installed.  To use it, from the root directory, run `$ source env/bin/activate` then run `pip install -r requirements.txt` to install other dependencies. <br>
 If you wish to use your own environment, you need to have Python 3.7 and run `pip install -r requirements.txt` from the root directory. <br>
+
 To run the code, run: python3 xxxxx.py
 
 # Synthetic data
