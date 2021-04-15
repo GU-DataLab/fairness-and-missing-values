@@ -10,6 +10,7 @@ llvmlite==0.32.1
 # notebooks
 jupyter
 tqdm
+jupyterlab
 
 # tests
 pytest>=3.5.0
