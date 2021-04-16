@@ -4,11 +4,11 @@ The framework of our code uses code from another Github project at https://githu
 
 This repository contains the following files: <br>
 <UL>
-<LI>demo_missing_adult.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using Adult data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm <br>
-<LI>demo_missing_compas.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using COMPAS data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm <br>
-<LI>demo_sel_adult.ipynb: this file provides a step by step instruction to create selection bias using Adult data to show the negative effects of selection and show the performance of our resampling algorithm <br>
-<LI>demo_sel_compas.ipynb: this file provides a step by step instruction to create selection bias using COMPAS data to show the negative effects of selection and show the performance of our resampling algorithm <br>
-<LI>demo_sel_missing.ipynb: this file provides a step by step instruction to create selection bias and MAR type missing values within the training dataset on COMPAS data. This file is a combination of demo_missing_compas.ipynb and demo_sel_compas.ipynb. Make sure you have read and understood demo_missing_compas.ipynb and demo_sel_compas.ipynb of how to create missing values and selection bias <br>
+<LI>demo_missing_adult.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using Adult data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm. <br>
+<LI>demo_missing_compas.ipynb: this file provides a step by step instruction to create MAR and MNAR type missing values using COMPAS data to show the negative effects of MAR and MNAR missing values and show the performance of our reweighting algorithm. <br>
+<LI>demo_sel_adult.ipynb: this file provides a step by step instruction to create selection bias using Adult data to show the negative effects of selection and show the performance of our resampling algorithm. <br>
+<LI>demo_sel_compas.ipynb: this file provides a step by step instruction to create selection bias using COMPAS data to show the negative effects of selection and show the performance of our resampling algorithm. <br>
+<LI>demo_sel_missing.ipynb: this file provides a step by step instruction to create selection bias and MAR type missing values within the training dataset on COMPAS data. This file is a combination of demo_missing_compas.ipynb and demo_sel_compas.ipynb. Make sure you have read and understood demo_missing_compas.ipynb and demo_sel_compas.ipynb of how to create missing values and selection bias. <br>
 
 </UL>
 
