@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../AIF360/")
 import numpy as np
-from fairness_metrics.tot_metrics import TPR, TNR
+from tot_metrics import TPR, TNR
 from aif360.metrics import BinaryLabelDatasetMetric
 from aif360.algorithms.preprocessing.optim_preproc import OptimPreproc
 from aif360.algorithms.preprocessing.optim_preproc_helpers.opt_tools\
@@ -157,7 +157,7 @@ class CompasDataset(StandardDataset):
             else:
                 return 0.0
 
-        filepath = 'AIF360/aif360/data/raw/compas/compas-scores-two-years.csv'
+        filepath = 'data/compas/compas-scores-two-years.csv'
         df = pd.read_csv(filepath, index_col='id', na_values=[])
 
         df['age_cat'] = df['age_cat'].replace('Greater than 45', 2)
@@ -367,7 +367,7 @@ class CompasDataset_test(StandardDataset):
             else:
                 return 0.0
 
-        filepath = 'compas-test.csv'
+        filepath = 'data/compas/compas-test.csv'
         df = pd.read_csv(filepath, index_col='id', na_values=[])
 
         df['age_cat'] = df['age_cat'].replace('Greater than 45', 2)
@@ -603,7 +603,7 @@ class CompasDataset_train(StandardDataset):
             else:
                 return 0.0
 
-        filepath = 'compas-train.csv'
+        filepath = 'data/compas/compas-train.csv'
         df = pd.read_csv(filepath, index_col='id', na_values=[])
 
         df['age_cat'] = df['age_cat'].replace('Greater than 45', 2)

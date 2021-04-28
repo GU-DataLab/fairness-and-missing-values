@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../AIF360/")
 import numpy as np
-from fairness_metrics.tot_metrics import TPR, TNR
+from tot_metrics import TPR, TNR
 from aif360.metrics import BinaryLabelDatasetMetric
 from aif360.algorithms.preprocessing.optim_preproc import OptimPreproc
 from aif360.algorithms.preprocessing.optim_preproc_helpers.opt_tools\
@@ -182,8 +182,8 @@ class AdultDataset(StandardDataset):
             used for more descriptive visualizations.
         """
 
-        train_path = 'AIF360/aif360/data/raw/adult/adult.data'
-        test_path = 'AIF360/aif360/data/raw/adult/adult.test'
+        train_path = 'data/adult/adult.data'
+        test_path = 'data/adult/adult.test'
         # as given by adult.names
         column_names = [
             'age',
@@ -259,7 +259,7 @@ class AdultDataset_test(StandardDataset):
             custom_preprocessing=None,
             metadata=default_mappings):
 
-        test_path = 'AIF360/aif360/data/raw/adult/adult.test'
+        test_path = 'data/adult/adult.test'
         # as given by adult.names
         column_names = [
             'age',
@@ -411,7 +411,7 @@ class AdultDataset_train(StandardDataset):
             custom_preprocessing=None,
             metadata=default_mappings):
 
-        train_path = 'AIF360/aif360/data/raw/adult/adult.data'
+        train_path = 'data/adult/adult.data'
         # as given by adult.names
         column_names = [
             'age',
@@ -646,7 +646,7 @@ class AdultDataset_test(StandardDataset):
             custom_preprocessing=None,
             metadata=default_mappings):
 
-        test_path = 'AIF360/aif360/data/raw/adult/adult.test'
+        test_path = 'data/adult/adult.test'
         # as given by adult.names
         column_names = [
             'age',
@@ -665,17 +665,9 @@ class AdultDataset_test(StandardDataset):
             'native-country',
             'income-per-year']
 
-        test = pd.read_csv(test_path, header=0, names=column_names,
+        df = pd.read_csv(test_path, header=0, names=column_names,
                            skipinitialspace=True, na_values=na_values)
 
-        df = test
-        # test = pd.read_csv(test_path, names=column_names,header = 0,skipinitialspace=True, na_values=na_values)
-        # train = pd.read_csv(train_path, names=column_names,skipinitialspace=True, na_values=na_values)
-
-        # aa,test = train_test_split(test,test_size = 5000)
-        # test.to_csv('AIF360/aif360/data/raw/adult/mod_adult_test.csv',index = False,header = 0)
-        # aa = aa.append(train)
-        # aa.to_csv('AIF360/aif360/data/raw/adult/mod_adult_train.csv',index = False)
 
         super(
             AdultDataset_test,
@@ -806,7 +798,7 @@ class AdultDataset_train(StandardDataset):
             custom_preprocessing=None,
             metadata=default_mappings):
 
-        train_path = 'AIF360/aif360/data/raw/adult/adult.data'
+        train_path = 'data/adult/adult.data'
         # as given by adult.names
         column_names = [
             'age',
